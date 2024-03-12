@@ -5,6 +5,7 @@ const resolve = require("path").resolve;
 
 const app = express();
 app.use(express.static(resolve(__dirname, "public")));
+
 app.use(
   "/bootstrap",
   express.static(resolve(__dirname, "node_modules/bootstrap/dist"))
